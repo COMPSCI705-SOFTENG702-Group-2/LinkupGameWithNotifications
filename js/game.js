@@ -6,6 +6,8 @@ var Game = (function(){
 
     var data = {
         time : config.time,
+        initialTime: config.initialTime,
+        currentTime: config.currenTime,
         cell : [],
     };
 
@@ -49,19 +51,22 @@ var Game = (function(){
 
             window.requestAnimationFrame(this.update.bind(this));  
         },
-
+        decorateTime: function(i) {
+            // add zero in front of numbers < 10
+            if (i < 10) {
+                i = "0" + i;
+            }  
+            return i;
+        },   
         updateTime: function () {
-            timeCooldown--;
-            if (!timeCooldown) {
-                timeCooldown = 60;
-                data.time--;
-                this.view.updateTime(data.time);
-            }
-            if (data.time === 0) {
-                this.over();
-            }
+            var delta   = Date.now() - data.initialTime, // milliseconds elapsed since start
+                timer   = new Date(delta),
+                minute  = timer.getMinutes(),
+                second  = timer.getSeconds();
+            m = this.decorateTime(minute);
+            s = this.decorateTime(second);
+            this.view.updateTime(m + ":" + s);
         },
-
         initCell : function(){
             var index = -1;
             for (var i=0; i<ROW; i++){

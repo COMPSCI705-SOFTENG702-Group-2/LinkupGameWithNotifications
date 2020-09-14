@@ -7,6 +7,8 @@ var config = (function(){
     var repeatCount = row * col / objectCount;
 
     var time = 120;
+    var initialTime = Date.now();
+    var currentTime = initialTime;
 
     var imgUrl = "./img/";
     var imgExtension = ".png";
@@ -30,6 +32,8 @@ var config = (function(){
         imgByName : imgByName,
         itemDirectionHTML: itemDirectionHTML,
         time : time,
+        initialTime: initialTime,
+        currenTime: initialTime
     }
 
 })();
