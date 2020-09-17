@@ -1,0 +1,15 @@
+{
+  "development": {
+    "storage": "linkup_development.db",
+    "dialect": "sqlite",
+    "logging": "console.log"
+  },
+  "test": {
+    "storage": "linkup_test.db",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "storage": "linkup_production.db",
+    "dialect": "sqlite"
+  }
+}
