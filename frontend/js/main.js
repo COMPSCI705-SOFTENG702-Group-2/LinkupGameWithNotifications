@@ -1,7 +1,4 @@
 on(window,'load',function(){
-
-   
-
 	webgazer.params.showVideoPreview = true;
 	webgazer.setRegression('ridge')
 		.setGazeListener(function(data, clock) {
@@ -15,7 +12,7 @@ on(window,'load',function(){
 	};
 	setup();
 });
-var $ = jQuery.noConflict();
+var $jQuery = jQuery.noConflict();
 window.applyKalmanFilter = true;
 window.saveDataAcrossSessions = true;
 function sleep (time) {
@@ -39,7 +36,7 @@ function stop_storing_points_variable(){
 function calculate(arr){
 	var tmp = [];
 	var ratio = 0.2;
-	var height = $(window).height();
+	var height = $jQuery(window).height();
 	var p = height*ratio;
 	for(var i=0;i<30;i++){
 		if(arr[1][i]<=p){
@@ -62,32 +59,32 @@ var notify_close = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 var notify=["Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death","Flat Bush toddler death",];
 var notify_index = 0;
 function showNotify(){
-	$('#msg').text(notify[notify_index]);
+	$jQuery('#msg').text(notify[notify_index]);
 	record();
-	$('.notification').slideDown();
+	$jQuery('.notification').slideDown();
 	sleep(3000).then(() => {
-		$('.notification').slideUp();
+		$jQuery('.notification').slideUp();
 		notify_index+=1;
 	});
 
 }
 var notification_timer;
-$(document).ready(function(){
-$('.notification').slideUp();
-$('.close_video').click(function(){
-		$('#webgazerVideoFeed').hide();
-		$('#webgazerVideoCanvas').hide();
-		$('#webgazerFaceOverlay').hide();
-		$('#webgazerFaceFeedbackBox').hide();
-		$('.close_video').hide();
-		$('#plotting_canvas').hide();
+$jQuery(document).ready(function(){
+$jQuery('.notification').slideUp();
+$jQuery('.close_video').click(function(){
+		$jQuery('#webgazerVideoFeed').hide();
+		$jQuery('#webgazerVideoCanvas').hide();
+		$jQuery('#webgazerFaceOverlay').hide();
+		$jQuery('#webgazerFaceFeedbackBox').hide();
+		$jQuery('.close_video').hide();
+		$jQuery('#plotting_canvas').hide();
 	 	var game = new Game();
 		game.setup();
     	event(game);
 		notification_timer = setInterval(showNotify, 40000);
 	});
 });
-$('#close').click(function(){
+$jQuery('#close').click(function(){
 	notify_close[notify_index] = 1;
-	$('.notification').slideUp();
+	$jQuery('.notification').slideUp();
 });
