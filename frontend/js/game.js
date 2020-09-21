@@ -3,15 +3,18 @@ var Game = (function(){
     var ROW = config.row + 2;
     var COL = config.col + 2;
     var itemCount = config.row * config.col;
+    var isEnded = 0;
 
     var data = {
-        time : config.time,
+        // time : config.time, // This is for countdown only
         initialTime: config.initialTime,
         currentTime: config.currenTime,
         cell : [],
     };
 
     var timeCooldown = 60;
+    // Limit minute for the participants to play the game
+    const LIMITED_MIN = '02';
 
     var hlepData = [];
 
@@ -27,7 +30,7 @@ var Game = (function(){
 
         init : function(){
             this.start();
-            this.view.init(this,data);
+            this.view.init(this, data);
         },
 
         start : function(){
@@ -35,6 +38,12 @@ var Game = (function(){
             this.fillCell();
             this.checkDeadlock();
             this.update();
+        },
+
+        reset: function() {
+            // reset item count
+            itemCount = config.row * config.col;
+            this.setup();
         },
 
         restart: function () {
@@ -65,7 +74,20 @@ var Game = (function(){
                 second  = timer.getSeconds();
             m = this.decorateTime(minute);
             s = this.decorateTime(second);
-            this.view.updateTime(m + ":" + s);
+            var timeString = m + ":" + s;
+            this.view.updateTime(timeString);
+
+            if (m === LIMITED_MIN) {
+                if (isEnded == 0) {
+                    isEnded = 1;
+                    setTimeout(function() {
+                        // Use a Google form link
+                        alert('Thanks for playing...Redirecting to the Survey');
+                        // @todo: Add redirection code
+                        window.location.replace("https://www.google.co.nz");
+                    }, 20);
+                }
+            }
         },
         initCell : function(){
             var index = -1;
@@ -319,11 +341,13 @@ var Game = (function(){
         },
 
         winning: function () {
-            setTimeout(function () {
-                var str = "已完成，确定再来一局吗？";
-                alert(str);
-                location.reload();
-            }, 50);
+            var self = this;
+            setTimeout(function() {
+                // @todo: integrate with a dialog library
+                // var str = "已完成，确定再来一局吗？";
+                // alert(str);
+                self.reset();
+            }, 20);
         },
         
         over: function () {
