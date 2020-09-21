@@ -1,0 +1,38 @@
+<button onclick="int">start!</button>
+<script>
+var i=0;
+var arry=["Flat Bush toddler death: Family members refuse to help with investigation ",
+"Some family members of an Auckland toddler killed earlier in the year are refusing to assist police with the investigation into her death.",
+'Results of an investigation into the death of 14-month-old Sofia Taueki-Jackson show she died from a deliberately inflicted "catastrophic head injury" at her home on Flat Bush Road, Clover Park on May 23 this year.'
+]
+var int =self.setInterval("notifyMe()",5000)
+function notifyMe() {
+    if (!("Notification" in window)) {
+      alert("This browser does not support desktop notification");
+    }
+    else if (Notification.permission === "granted") {
+      // If it's okay let's create a notification
+        notify();
+      }
+    else if (Notification.permission !== 'denied') {
+      Notification.requestPermission(function (permission) {
+        if (permission === "granted") {
+          var notification = new Notification("Hi there!");
+        }
+      });
+    }
+  }
+  function notify(){
+      if(i<3){
+        var n = new Notification(arry[i]);
+        n.onshow = function () { 
+        setTimeout(n.close.bind(n), 3000); 
+        }
+        i++;
+      }
+      else{
+        var n = new Notification("there is no new notication")
+        int=window.clearInterval(int);
+      }
+    }
+</script>
