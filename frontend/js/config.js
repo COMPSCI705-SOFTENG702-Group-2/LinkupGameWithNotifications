@@ -23,7 +23,6 @@ var config = (function(){
                                     <div class="x left"></div>
                                     <div class="x right"></div>
                               </div>`;
-
     return {
         row : row,
         col : col,

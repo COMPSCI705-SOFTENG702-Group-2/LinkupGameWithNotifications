@@ -7,7 +7,7 @@ var Game = (function(){
     var data = {
         time : config.time,
         initialTime: config.initialTime,
-        currentTime: config.currenTime,
+        currentTime: config.currentTime,
         cell : [],
     };
 
@@ -21,6 +21,8 @@ var Game = (function(){
 
     Game.prototype = {
         setup : function(){
+			data.initialTime = Date.now();
+			data.currentTime = Date.now();
             this.view = new View();
             this.init();
         },
