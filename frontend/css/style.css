@@ -147,3 +147,31 @@ a {
     height: 35px; } }
 
 /*# sourceMappingURL=style.css.map */
+.close_video{
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	top: 10px;
+	left: 10px;
+	z-index: 9999;
+}
+.notification{
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	width: calc(100% - 10px);
+	padding: 15px;
+	border-radius: 5px;
+	z-index: 100001;
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.notification #close{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
