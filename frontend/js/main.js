@@ -36,7 +36,7 @@ function stop_storing_points_variable(){
 function calculate(arr){
 	var tmp = [];
 	var height = $jQuery(window).height();
-	for(var i=0;i<30;i++){
+	for(var i=0;i<50;i++){
     	tmp.push(Number((arr[1][i]/height).toFixed(2)));
 	}
 	return tmp;
@@ -44,7 +44,7 @@ function calculate(arr){
 
 function record(){
 	  store_points_variable();
-	  sleep(3000).then(() => {
+	  sleep(5000).then(() => {
 		stop_storing_points_variable();
 		eyetrack_data.push(calculate(webgazer.getStoredPoints()));
 	  });
@@ -76,7 +76,7 @@ function showNotify(){
 		$jQuery('#msg').text(notify[notify_index]);
 		record();
 		$jQuery('.notification').slideDown();
-		sleep(3000).then(() => {
+		sleep(5000).then(() => {
 			$jQuery('.notification').slideUp();
 			notify_index+=1;
 		});
@@ -103,4 +103,4 @@ $jQuery('#close').click(function(){
 	notify_close[notify_index] = 1;
 	$jQuery('.notification').slideUp();
 });
-alert("Please put your face into the square and wait until it detects your face and turn green, then click 'Start Game' button to start the game.");
+alert("Please wait few seconds and put your face into the square and wait until it detects your face and turn green, then click 'Start Game' button to start the game.");
