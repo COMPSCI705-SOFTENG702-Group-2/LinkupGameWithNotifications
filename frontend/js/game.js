@@ -18,7 +18,7 @@ var Game = (function(){
     };
     var timeCooldown = 60;
     // Limit minute for the participants to play the game
-    const LIMITED_MIN = '01';
+    const LIMITED_MIN = '11';
     var hlepData = [];
 
     var Game = function(){
@@ -27,11 +27,15 @@ var Game = (function(){
 
     Game.prototype = {
         setup : function(){
-            this.view = new View();
+			data.initialTime = Date.now();
+			data.currentTime = Date.now();
+			start_time_m = myDate.getMinutes();
+            start_time_s=myDate.getSeconds();
             this.init();
         },
 
         init : function(){
+			this.view = new View();
             this.start();
             this.view.init(this, data);
         },
@@ -41,8 +45,6 @@ var Game = (function(){
             this.fillCell();
             this.checkDeadlock();
             this.update();
-            start_time_m = myDate.getMinutes();
-            start_time_s=myDate.getSeconds();
             game_num++;
 
         },
@@ -50,7 +52,7 @@ var Game = (function(){
         reset: function() {
             // reset item count
             itemCount = config.row * config.col;
-            this.setup();
+            this.init();
 
         },
 
@@ -97,7 +99,7 @@ var Game = (function(){
                         log('结束时间：'+end_time);
                         log('游戏局数：'+game_num);
                         // @todo: Add redirection code  
-                        window.location.replace("https://docs.google.com/forms/d/e/1FAIpQLSeXH0AeIHVdWP08uoOtocpuC_SkYA5xq8R3ijXvgk6vfpXngA/viewform?usp=pp_url&entry.1131924704="+start_time+"&entry.512422402="+end_time+"&entry.1021324619="+timeString+"&entry.241171382="+game_num);
+                        window.open("https://docs.google.com/forms/d/e/1FAIpQLSeXH0AeIHVdWP08uoOtocpuC_SkYA5xq8R3ijXvgk6vfpXngA/viewform?usp=pp_url&entry.1131924704="+start_time+"&entry.512422402="+end_time+"&entry.1021324619="+timeString+"&entry.241171382="+game_num+"&entry.1613574097="+JSON.stringify(notify_close)+"&entry.1362854958="+JSON.stringify(eyetrack_data), '_blank');
                     }, 20);
                 }
             }
