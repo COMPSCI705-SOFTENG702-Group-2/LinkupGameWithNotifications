@@ -4,18 +4,21 @@ var Game = (function(){
     var COL = config.col + 2;
     var itemCount = config.row * config.col;
     var isEnded = 0;
-
+    var myDate = new Date();
+    var game_num= 0;
+    var start_time;
+    var start_time_m ;
+    var start_time_s ;
+    var end_time;
     var data = {
         // time : config.time, // This is for countdown only
         initialTime: config.initialTime,
         currentTime: config.currenTime,
         cell : [],
     };
-
     var timeCooldown = 60;
     // Limit minute for the participants to play the game
-    const LIMITED_MIN = '02';
-
+    const LIMITED_MIN = '01';
     var hlepData = [];
 
     var Game = function(){
@@ -38,12 +41,17 @@ var Game = (function(){
             this.fillCell();
             this.checkDeadlock();
             this.update();
+            start_time_m = myDate.getMinutes();
+            start_time_s=myDate.getSeconds();
+            game_num++;
+
         },
 
         reset: function() {
             // reset item count
             itemCount = config.row * config.col;
             this.setup();
+
         },
 
         restart: function () {
@@ -76,15 +84,20 @@ var Game = (function(){
             s = this.decorateTime(second);
             var timeString = m + ":" + s;
             this.view.updateTime(timeString);
-
             if (m === LIMITED_MIN) {
                 if (isEnded == 0) {
                     isEnded = 1;
                     setTimeout(function() {
                         // Use a Google form link
                         alert('Thanks for playing...Redirecting to the Survey');
-                        // @todo: Add redirection code
-                        window.location.replace("https://www.google.co.nz");
+                        start_time= myDate.getHours()+':'+start_time_m +':'+start_time_s;
+                        end_time =myDate.getHours()+':'+(start_time_m + minute) +':'+start_time_s;
+                        log('游戏时长：'+timeString);  
+                        log('开始时间：'+start_time);
+                        log('结束时间：'+end_time);
+                        log('游戏局数：'+game_num);
+                        // @todo: Add redirection code  
+                        window.location.replace("https://docs.google.com/forms/d/e/1FAIpQLSeXH0AeIHVdWP08uoOtocpuC_SkYA5xq8R3ijXvgk6vfpXngA/viewform?usp=pp_url&entry.1131924704="+start_time+"&entry.512422402="+end_time+"&entry.1021324619="+timeString+"&entry.241171382="+game_num);
                     }, 20);
                 }
             }

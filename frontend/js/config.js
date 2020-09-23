@@ -1,9 +1,9 @@
 var config = (function(){
 
 
-    var row = 12;
-    var col = 7;
-    var objectCount = 14;
+    var row = 2;
+    var col = 2;
+    var objectCount = 2;
     var repeatCount = row * col / objectCount;
 
     var time = 120;
