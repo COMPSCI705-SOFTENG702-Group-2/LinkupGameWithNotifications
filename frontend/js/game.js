@@ -86,7 +86,7 @@ var Game = (function(){
             s = this.decorateTime(second);
             var timeString = m + ":" + s;
             this.view.updateTime(timeString);
-            if (m === LIMITED_MIN) {
+            if (m == LIMITED_MIN) {
                 if (isEnded == 0) {
                     isEnded = 1;
                     setTimeout(function() {
