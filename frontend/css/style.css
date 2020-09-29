@@ -155,6 +155,10 @@ a {
 	left: 10px;
 	z-index: 9999;
 }
+
+#start_game_2{
+  top: 50px;
+}
 .notification{
 	position: fixed;
 	top: 5px;
