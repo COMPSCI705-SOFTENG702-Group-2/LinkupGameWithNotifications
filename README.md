@@ -1,7 +1,7 @@
 # Link Up game with notifications
 (content here)
 
-Demo URL: [Click here](https://multifun.iceloof.com)
+Demo URL: https://multifun.iceloof.com
 
 ## Summary
 
