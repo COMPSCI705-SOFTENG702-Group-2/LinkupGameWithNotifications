@@ -98,10 +98,15 @@ var notify2=[
 	"Lisa is an American actress, author and television personality. Rinna has written two books: Starlit; The Big Fun Book. Rinna graduated from Medford Senior High School in 1981. In 2014, Rinna joined the cast of The Real Housewives of Beverly Hills."];
 
 var notify_index = 0;
-var test_group_id
+var test_group_id = 1;
 function showNotify(){
-	notify = test_group_id == 1 ? notify1 : notify2;
+	var notify = test_group_id == 1 ? notify1 : notify2;
+	var minShortMsgInterval = 15, maxShortMsgInterval = 19;
+	var minLongMsgInterval = 72, maxLongMsgInterval = 76;
+	var shortMsgInterval = Math.floor(Math.random() * (maxShortMsgInterval - minShortMsgInterval + 1) + minShortMsgInterval);
+	var longMsgInterval = Math.floor(Math.random() * (maxLongMsgInterval - minLongMsgInterval + 1) + minLongMsgInterval);
 	if(notify_index<notify.length){
+		var isCurShort = notify[notify_index].length < 180;
 		$jQuery('#msg').text(notify[notify_index]);
 		record();
 		$jQuery('.notification').slideDown();
@@ -109,6 +114,8 @@ function showNotify(){
 			$jQuery('.notification').slideUp();
 			notify_index+=1;
 		});
+		var interval = isCurShort ? shortMsgInterval : longMsgInterval;
+		setTimeout(showNotify, interval * 1000);
 	}
 }
 
@@ -126,10 +133,11 @@ function setupGame(test_group_id) {
 	var game = new Game();
 	game.setup();
 	event(game);
-	notification_timer = setInterval(showNotify, 30000);
+	sleep(30000).then(() => {
+		showNotify();
+	});
 }
 
-var notification_timer;
 $jQuery(document).ready(function(){
 $jQuery('.notification').slideUp();
 
