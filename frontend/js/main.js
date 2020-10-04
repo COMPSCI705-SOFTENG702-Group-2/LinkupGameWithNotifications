@@ -98,7 +98,6 @@ var notify2=[
 	"Lisa is an American actress, author and television personality. Rinna has written two books: Starlit; The Big Fun Book. Rinna graduated from Medford Senior High School in 1981. In 2014, Rinna joined the cast of The Real Housewives of Beverly Hills."];
 
 var notify_index = 0;
-var test_group_id = 1;
 function showNotify(){
 	var notify = test_group_id == 1 ? notify1 : notify2;
 	var minShortMsgInterval = 15, maxShortMsgInterval = 19;

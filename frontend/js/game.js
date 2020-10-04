@@ -99,7 +99,7 @@ var Game = (function(){
                         log('结束时间：'+end_time);
                         log('游戏局数：'+game_num);
                         // @todo: Add redirection code  
-                        window.open("https://docs.google.com/forms/d/e/1FAIpQLSeXH0AeIHVdWP08uoOtocpuC_SkYA5xq8R3ijXvgk6vfpXngA/viewform?usp=pp_url&entry.1131924704="+start_time+"&entry.512422402="+end_time+"&entry.1021324619="+timeString+"&entry.241171382="+game_num+"&entry.1613574097="+JSON.stringify(notify_close)+"&entry.1362854958="+JSON.stringify(eyetrack_data), '_blank');
+                      window.open("https://docs.google.com/forms/d/e/1FAIpQLSeXH0AeIHVdWP08uoOtocpuC_SkYA5xq8R3ijXvgk6vfpXngA/viewform?usp=pp_url&entry.73629686=Game+"+test_group_id+"&entry.1131924704="+start_time+"&entry.512422402="+end_time+"&entry.1021324619="+timeString+"&entry.241171382="+game_num+"&entry.1613574097="+JSON.stringify(notify_close)+"&entry.1362854958="+JSON.stringify(eyetrack_data), '_blank');
                     }, 20);
                 }
             }
