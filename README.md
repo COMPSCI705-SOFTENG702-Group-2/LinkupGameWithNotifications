@@ -26,28 +26,27 @@ Before starting the game, participants need to be asked to turn on the camera an
 (System requirements)
 What things you need to install the software and how to install them
 
-    Give examples
+    Python3, Jupyter, numpy, pandas, matplotlib
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development
 env running.
 
-Say what the step will be
+Analyser tool:
 
-    Give the example
+  - Download and install Python3 from https://www.python.org/downloads/
+  - Install packages <code>pip install jupyter numpy pandas matplotlib</code>
+  - Go to "Analyser" folder, <code>jupyter notebook --port 8888</code> and open http://localhost:8888/ to start the analyser program
 
-And repeat
+Experiment Environment setup:
 
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
-
+  - Put everything under "frontend" folder into web server(Apache or Nginx), and then go to the browser to visit it.
 
 ## Built With
 
   - [Linkup](https://github.com/gd4Ark/linkup) - The main code base that we used as the Linkup game
+  - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open source library that we used for eye tracking data
 
 ## Experiment
 
