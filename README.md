@@ -50,7 +50,7 @@ Experiment Environment setup:
 
 ## Experiment
 
-#Introduction
+  - Introduction
 
 The purpose of the experiment is to test users’ information awareness when they are doing a continuous attention task. We assume that the chunking and frequency of the information will impact users’ information awareness.
 
@@ -63,22 +63,22 @@ In order to reduce the confounding variables of long or short texting notificati
 
 The Participant Information Sheet and Consent Form link
 
-Approach: within-subject
-Participants: 10
-Duration: around 15 min
+  - Approach: within-subject
+  - Participants: 10
+  - Duration: around 15 min
 
-Steps:
-1. Explain the experiment and game rules  
-2. Participants read the Participant Information Sheet and sign the Consent Form
-3. Randomly separate participants into two groups (Group A, Group B)
-4. Group A will execute the Game 1, Group B will execute the Game 2 (the difference between Game 1 and Game 2 is the order of notification )
-5. Adjust the eye tracking with the webcam in the laptop
-6. Participants will start the game 1 or 2
-7. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
-8. When they start the game, the notifications will pop up after 30 seconds
-9. Participants will jump into a survey after the experiment
-10. Participants will need to fill up the questionnaires
-11. Complete the experiment 
+  - Steps:
+  1. Explain the experiment and game rules  
+  2. Participants read the Participant Information Sheet and sign the Consent Form
+  3. Randomly separate participants into two groups (Group A, Group B)
+  4. Group A will execute the Game 1, Group B will execute the Game 2 (the difference between Game 1 and Game 2 is the order of notification )
+  5. Adjust the eye tracking with the webcam in the laptop
+  6. Participants will start the game 1 or 2
+  7. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
+  8. When they start the game, the notifications will pop up after 30 seconds
+  9. Participants will jump into a survey after the experiment
+  10. Participants will need to fill up the questionnaires
+  11. Complete the experiment 
 
 
 ## Authors
