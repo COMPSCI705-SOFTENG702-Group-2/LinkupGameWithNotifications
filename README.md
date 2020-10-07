@@ -1,5 +1,8 @@
 # Link Up game with notifications
-This project is a test project. Participants need to complete several tasks required by the project, including the main task and other subtasks at the same time. Our main task is a little game. This little game is to find the same two things, which can be treated as related within certain rules. In this game, we stipulate that the user clicks on two icons of the same small animals that can be associated with the mouse to eliminate them, and the icons that can be connected can be directly connected by a line without other obstacles. The game duration is 11 minutes. When the user participates in the game, some notifications will automatically pop up at the top of the screen to display some information. This is the subtask of the project. The notification pop-up time and pop-up style are different. At the end of the project, the user will be asked to answer a questionnaire after completing the game.
+This project aims to answer the research question, how does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. Participants will be asked to play the link-up game while having some pop-up notifications during the game. The link-up game is treated as a task that requires continuous attention. Meanwhile, the notifications pop up at different frequency with different amount of information. 
+<br><br>
+The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
+
 
 Our Demo URL: https://multifun.iceloof.com
 
@@ -45,8 +48,8 @@ Experiment Environment setup:
 
 ## Built With
 
-  - [Linkup](https://github.com/gd4Ark/linkup) - The main code base that we used as the Linkup game
-  - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open source library that we used for eye tracking data
+  - [Linkup](https://github.com/gd4Ark/linkup) - The primary code base that we used to build the Linkup game. The game is treated as the main task that requires continuous attention. 
+  - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open-source library that we used for gathering eye-tracking data. In this experiment, we are interested in the duration and frequency that the participants look at the notifications.
 
 ## Experiment
 
