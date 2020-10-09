@@ -9,7 +9,7 @@ The game starts by recognizing the face of the participants in order to track th
 ### Research Question
 How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
 
-
+### Demo
 Our Demo URL: https://multifun.iceloof.com
 
 ## Summary
