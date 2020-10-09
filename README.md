@@ -1,6 +1,15 @@
-# Link Up game with notifications
-This project is a test project. Participants need to complete several tasks required by the project, including the main task and other subtasks at the same time. Our main task is a little game. This little game is to find the same two things, which can be treated as related within certain rules. In this game, we stipulate that the user clicks on two icons of the same small animals that can be associated with the mouse to eliminate them, and the icons that can be connected can be directly connected by a line without other obstacles. The game duration is 11 minutes. When the user participates in the game, some notifications will automatically pop up at the top of the screen to display some information. This is the subtask of the project. The notification pop-up time and pop-up style are different. At the end of the project, the user will be asked to answer a questionnaire after completing the game.
+# Information Awareness VS Multitasking Study
 
+## Introduction
+
+The aim of this project is to study the relationship between information awareness and multitasking. Participants will be asked to play the link-up game while having some long or short pop-up notifications during the game. The link-up game is treated as a task that requires continuous attention. Meanwhile, the notifications will pop up with temporal density consistent. 
+<br><br>
+The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
+
+### Research Question
+How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
+
+### Demo
 Our Demo URL: https://multifun.iceloof.com
 
 ## Summary
@@ -45,20 +54,50 @@ Experiment Environment setup:
 
 ## Built With
 
-  - [Linkup](https://github.com/gd4Ark/linkup) - The main code base that we used as the Linkup game
-  - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open source library that we used for eye tracking data
+  - [Linkup](https://github.com/gd4Ark/linkup) - The primary code base that we used to build the Linkup game. The game is treated as the main task that requires continuous attention. 
+  - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open-source library that we used for gathering eye-tracking data. In this experiment, we are interested in the duration and frequency that the participants look at the notifications.
 
 ## Experiment
 
-Detail goes here
+### Introduction
+
+  The purpose of the experiment is to test users’ information awareness when they are doing a continuous attention task. We assume that the chunking and frequency of the information will impact users’ information awareness.
+
+  The link game will be used as the continuous attention task in this experiment. Because the link game is a popular game with simple execution, and the complexity of it will be similar to all the participants. It could be instead of any continuous attention task like driving or writing, etc.
+
+  To test the information awareness, we use the texting notifications which will pop up and interrupt participants when they play the game. We will use eye tracking to track their behavior when the notification pops up and will use questionnairos to test the accuracy of the information awareness. All those data will be help us to identify the information awareness.
+
+  There are 2 types of notification, long texting notification, and short texting notification. The long texting notification includes 4 sentences and the short one includes 1 sentence. To make sure the participants will receive the same volume of information with temporal density consistent. The long texting notification will pop up with the 4 short texting notifications at the same time duration (30s). The purpose of this design is to make sure that the short texting message that could present the chunking and frequency of the differs from the long texting message.
+  
+  In order to reduce the confounding variables of long or short texting notification order. The experiment will provide 2 different orders of the notifications. The first order is: long, short, long, short, long, short, long, short. The second order is: short, long, short, long, short, long, short, long.
+
+Refer to the [Participant Information Sheet](https://drive.google.com/file/d/1ggJoZZ5TZ6hRXysi4kGW--EleAT9rpjv/view?usp=sharing) and [Consent Form](https://drive.google.com/file/d/1XvsU-GW-ktN848zDx2UAC3M8U4RPIY76/view?usp=sharing).
+
+### Approach
+Within-subject
+### Participants
+10 university students
+### Duration
+Around 15 minutes (including game and questionnaires)
+
+### Steps:
+  1. Explain the experiment and game rules  
+  2. Participants read the Participant Information Sheet and sign the Consent Form
+  3. Randomly separate participants into two groups (Group A, Group B)
+  4. Group A will execute the Game 1, Group B will execute the Game 2 (the difference between Game 1 and Game 2 is the order of notification )
+  5. Adjust the eye tracking with the webcam in the laptop
+  6. Participants will start the game 1 or 2
+  7. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
+  8. When they start the game, the notifications will pop up after 30 seconds
+  9. Participants will jump into a survey after the experiment
+  10. Participants will need to fill up the questionnaires
+  11. Complete the experiment 
+
 
 ## Authors
 
-Annie
-Bruce
-Siyu Qian
-Hurin Hu
-Zach
+  - Researchers: Annie Xu, Bruce Gao, Siyu Qian, Hurin Hu, Zach Wang
+  - Supervisor: Dr. Danielle Lottridge 
 
 ## License
 
