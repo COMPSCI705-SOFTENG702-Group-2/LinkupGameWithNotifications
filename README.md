@@ -95,14 +95,26 @@ Around 15 minutes (including game and questionnaires)
   11. Complete the experiment 
 
 ## Data Analysis
-We collected gaming data, eye tracking data, manual dismiss notification and survey data through Google Form, and the data is exported as csv under "Analyser" folder. Based on the data analyser tool "Analyser/analyser.ipynb", there are some data which are not useful for our analysis, like the gaming data, which is very hard to link to the survey data, and the manual dismiss notification data shows nobody close the notification manually, so there are not used in this analysis.
+We collected gaming data, eye tracking data, manual dismiss notification and survey data through Google Form, and the data is exported as csv under "Analyser" folder. Based on the data analyser tool "Analyser/analyser.ipynb", there are some data which are not useful for our analysis, like the gaming data, which is very hard to link to the survey data, and the manual dismiss notification data shows nobody close the notification manually, so there are not used in this analysis. 
+
+The eye tracking data for each participant is a 20*50 array, each data point represent participant's eye focus on the proportion of the screen, 0.1 means looking at the top 10% of the screen, 0.4 means looking at the top 40% of the screen, etc.
 
 These are the charts we generated from the eye tracking and survey data:
-
+  - There are 20*50 data collected from each participant, it represents 20 notifications with 50 data points for each, 50 data points are collected within 5 seconds. We calculated average value for each data point and draw with line chart to see how participants eye moving pattern during the notification popup.
+  
 ![Eye Tracking by group and length](images/analyser1.png)
+
+  - We set a threshold 0.4 to check whether the participant was looking the notification or not. As 50 data points were collected in 5 seconds, the average time can be counted as the number of value less or equal to 0.4 divides 50 and times 5.
+  
 ![Average Time by group and length](images/analyser2.png)
+
+  - Besides eye tracking data, we also analyse survey answers by group and length, the survey includes single choice and multiple choice, so the average correct rate will be calculated by true or false or the percentage of the correct answer for each question. 
+  
 ![Correct Rate by group 1 and length](images/analyser3.png)
 ![Correct Rate by group 2 and length](images/analyser4.png)
+
+  - To have a better sense of our result, we also draw pie charts to show the correct rate by group and different text length with all data.
+  
 <img src="images/analyser5.png" alt="Correct Rate by Group 1 and Long text" width="50%" /><img src="images/analyser6.png" alt="Correct Rate by Group 1 and Short text" width="50%" />
 <img src="images/analyser7.png" alt="Correct Rate by Group 2 and Long text" width="50%" /><img src="images/analyser8.png" alt="Correct Rate by Group 1 and Short text" width="50%" />
 
