@@ -10,7 +10,9 @@ The game starts by recognizing the face of the participants in order to track th
 How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
 
 ### Demo
-Our Demo URL: https://multifun.iceloof.com
+To execute or demo this project, please access the URL: https://multifun.iceloof.com
+Supported System: Windows, Mac, Android
+Supported Browser: Chrome 
 
 ## Summary
 
@@ -33,8 +35,8 @@ Before starting the game, participants need to be asked to turn on the camera an
 
 ### Prerequisites
 
-(System requirements)
-What things you need to install the software and how to install them
+System Requirements (Mac & Linux, Windows)
+To set up a development environment, please check the following softwares and environment have been installed. Refer to Installing section to set up a new environment.
 
     Python3, Jupyter, numpy, pandas, matplotlib
 
