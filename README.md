@@ -18,6 +18,7 @@ Our Demo URL: https://multifun.iceloof.com
   - [Built With](#built-with)
   - [Functionality](#functionality)
   - [Experiment](#experiment)
+  - [Data Analysis](#data-analysis)
   - [Authors](#authors)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
@@ -93,6 +94,17 @@ Around 15 minutes (including game and questionnaires)
   10. Participants will need to fill up the questionnaires
   11. Complete the experiment 
 
+## Data Analysis
+We collected gaming data, eye tracking data, manual dismiss notification and survey data through Google Form, and the data is exported as csv under "Analyser" folder. Based on the data analyser tool "Analyser/analyser.ipynb", there are some data which are not useful for our analysis, like the gaming data, which is very hard to link to the survey data, and the manual dismiss notification data shows nobody close the notification manually, so there are not used in this analysis.
+
+These are the charts we generated from the eye tracking and survey data:
+
+![Eye Tracking by group and length](images/analyser1.png)
+![Average Time by group and length](images/analyser2.png)
+![Correct Rate by group 1 and length](images/analyser3.png)
+![Correct Rate by group 2 and length](images/analyser4.png)
+<img src="images/analyser5.png" alt="Correct Rate by Group 1 and Long text" width="50%" /><img src="images/analyser6.png" alt="Correct Rate by Group 1 and Short text" width="50%" />
+<img src="images/analyser7.png" alt="Correct Rate by Group 2 and Long text" width="50%" /><img src="images/analyser8.png" alt="Correct Rate by Group 1 and Short text" width="50%" />
 
 ## Authors
 
