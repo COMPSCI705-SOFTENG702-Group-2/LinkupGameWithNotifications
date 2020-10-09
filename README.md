@@ -53,7 +53,7 @@ Experiment Environment setup:
 
 ## Experiment
 
-  - Introduction
+### Introduction
 
   The purpose of the experiment is to test users’ information awareness when they are doing a continuous attention task. We assume that the chunking and frequency of the information will impact users’ information awareness.
 
@@ -67,11 +67,11 @@ Experiment Environment setup:
 
 The [Participant Information Sheet](https://drive.google.com/file/d/1ggJoZZ5TZ6hRXysi4kGW--EleAT9rpjv/view?usp=sharing) and [Consent Form](https://drive.google.com/file/d/1XvsU-GW-ktN848zDx2UAC3M8U4RPIY76/view?usp=sharing)
 
-  - Approach: within-subject
-  - Participants: 10
-  - Duration: around 15 min
+### Approach: within-subject
+### Participants: 10
+### Duration: around 15 min
 
-  - Steps:
+### Steps:
   1. Explain the experiment and game rules  
   2. Participants read the Participant Information Sheet and sign the Consent Form
   3. Randomly separate participants into two groups (Group A, Group B)
