@@ -1,5 +1,10 @@
-# Link Up game with notifications
-This project aims to answer the research question, how does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. Participants will be asked to play the link-up game while having some pop-up notifications during the game. The link-up game is treated as a task that requires continuous attention. Meanwhile, the notifications pop up at different frequency with different amount of information. 
+# Information Awareness VS Multitasking Study
+
+## Introduction
+### Research Question
+How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
+
+Participants will be asked to play the link-up game while having some long or short pop-up notifications during the game. The link-up game is treated as a task that requires continuous attention. Meanwhile, the notifications will pop up with temporal density consistent. 
 <br><br>
 The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
 
