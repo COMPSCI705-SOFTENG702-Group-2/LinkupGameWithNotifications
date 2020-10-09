@@ -67,15 +67,18 @@ Experiment Environment setup:
 
   To test the information awareness, we use the texting notifications which will pop up and interrupt participants when they play the game. We will use eye tracking to track their behavior when the notification pops up and will use questionnairos to test the accuracy of the information awareness. All those data will be help us to identify the information awareness.
 
-  There are 2 types of notification, long texting notification, and short texting notification. The long texting notification includes 4 sentences and the short one includes 1 sentence. To make sure the participants will receive the same volume of information in the same time period. The long texting notification will pop up with the 4 short texting notifications at the same time duration (30s). The purpose of this design is to make sure that the short texting message that could present the chunking and frequency of the differs from the long texting message.
+  There are 2 types of notification, long texting notification, and short texting notification. The long texting notification includes 4 sentences and the short one includes 1 sentence. To make sure the participants will receive the same volume of information with temporal density consistent. The long texting notification will pop up with the 4 short texting notifications at the same time duration (30s). The purpose of this design is to make sure that the short texting message that could present the chunking and frequency of the differs from the long texting message.
   
   In order to reduce the confounding variables of long or short texting notification order. The experiment will provide 2 different orders of the notifications. The first order is: long, short, long, short, long, short, long, short. The second order is: short, long, short, long, short, long, short, long.
 
 The [Participant Information Sheet](https://drive.google.com/file/d/1ggJoZZ5TZ6hRXysi4kGW--EleAT9rpjv/view?usp=sharing) and [Consent Form](https://drive.google.com/file/d/1XvsU-GW-ktN848zDx2UAC3M8U4RPIY76/view?usp=sharing)
 
-### Approach: within-subject
-### Participants: 10
-### Duration: around 15 min
+### Approach
+Within-subject
+### Participants
+10 university students
+### Duration
+Around 15 minutes (including game and questionnaires)
 
 ### Steps:
   1. Explain the experiment and game rules  
@@ -93,11 +96,11 @@ The [Participant Information Sheet](https://drive.google.com/file/d/1ggJoZZ5TZ6h
 
 ## Authors
 
-Annie
-Bruce
+Annie Xu
+Bruce Gao
 Siyu Qian
 Hurin Hu
-Zach
+Zach Wang
 
 ## License
 
