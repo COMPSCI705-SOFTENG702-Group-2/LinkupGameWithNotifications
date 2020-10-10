@@ -39,12 +39,49 @@ Before starting the game, participants need to be asked to turn on the camera an
 
 System Requirements (Mac & Linux, Windows)
 
-To set up a development environment, please check the following softwares and environment have been installed. Refer to Installing section to set up a new environment.
+To set up a development environment, please check the following software and environment have been installed. Refer to the [**Installing**](#Installing) section to set up a new environment.
 
-    Python3, Jupyter, numpy, pandas, matplotlib
+    Git, Google Chrome, Python3, Jupyter, numpy, pandas, matplotlib
 
-### Installing
+## Installing
 
+As the project could be divided into two main parts: _Implementation_ and 
+_Data Analysis_. These parts are introduced under separate sections.
+
+### Implementation
+To set up the project on your own device, you would need to follow the following steps:
+
+**For Mac & Linux User:**
+```
+# STEP 1
+Open your terminal
+
+# STEP 2
+cd ~/Documents
+
+# STEP 3
+git clone https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications.git
+
+# STEP 4
+Open the frontend directory (in the path ~/Documents/LinkupGameWithNotifications)
+(example path: /Users/siyuqian/Documents/LinkupGameWithNotifications/frontend)
+
+# STEP 5
+Double click on the index.html (For the presistency of the program behaviour we recommend you to use Google chrome)
+```
+
+**For Windows User:**
+```
+# STEP 1
+Click Download ZIP button in the homepage of the repository (The screenshot are provided below)
+
+# STEP 2
+Double click on the index.html (For the presistency of the program behaviour we recommend you to use Google chrome)
+```
+
+![Screenshot for Windows User STEP 1](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/Screenshot1-highlighted.PNG)
+
+### Data Analyse
 A step by step series of examples that tell you how to get a development
 env running.
 
