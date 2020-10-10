@@ -114,7 +114,7 @@ Experiment Environment setup:
   
   In order to reduce the confounding variables of long or short texting notification order. The experiment will provide 2 different orders of the notifications. The first order is: long, short, long, short, long, short, long, short. The second order is: short, long, short, long, short, long, short, long.
 
-Refer to the [Participant Information Sheet](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/COMPSCI705_PIS_Students_Oct 2020.pdf) and [Consent Form](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/Consent_Form.pdf).
+Refer to the [Participant Information Sheet](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/COMPSCI705_PIS_Students_Oct_2020.pdf) and [Consent Form](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/Consent_Form.pdf).
 
 ### Approach
 Within-subject
