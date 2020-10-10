@@ -42,6 +42,8 @@ System Requirements (Mac & Linux, Windows)
 To set up a development environment, please check the following software and environment have been installed. Refer to the [**Installing**](#Installing) section to set up a new environment.
 
     Git, Google Chrome, Python3, Jupyter, numpy, pandas, matplotlib
+    
+**IMPORTANT:** Since the experiment is highly depending on the eye-tracking techniques, therefore a computer with a valid camera for video chat is **required**. Usually a laptop is fine.
 
 ## Installing
 
