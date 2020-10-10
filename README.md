@@ -81,7 +81,7 @@ Double click on the index.html (For the presistency of the program behaviour we 
 
 ![Screenshot for Windows User STEP 1](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/Screenshot1-highlighted.PNG)
 
-### Data Analysis
+### Data Analyse
 A step by step series of examples that tell you how to get a development
 env running.
 
