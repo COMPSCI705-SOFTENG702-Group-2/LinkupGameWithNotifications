@@ -173,8 +173,6 @@ This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
 Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
 details
 
-## Acknowledgments
-
-  - Hat tip to anyone whose code was used
-  - Inspiration
-  - etc
+## Acknowledgment
+This project was conducted supported by Dr Danielle Lottridge and Prof Robert Amor of the Department of Computer Science and Department of Software Engineering at
+the University of Auckland.
