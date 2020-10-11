@@ -153,7 +153,7 @@ We collected gaming data, eye tracking data, manual dismiss notification and sur
 
 You can check the program <a href="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/Analyser/analyser.ipynb" target="_blank">here</a>(ipynb) or <a href="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/Analyser/analyser.pdf" target="_blank">here</a>(pdf).
 
-These are the demostration of charts we generated from the eye tracking and survey data (a formal generation and analysis will be conduct in the final report):
+**These are the demonstration of the charts we generated from the eye-tracking and survey data. A formal generation and analysis will be conducted in the final report**:
   - There are 20*50 data collected from each participant, it represents 20 notifications with 50 data points for each, 50 data points are collected within 5 seconds. We calculated average value for each data point and draw with line chart to see how participants eye moving pattern during the notification popup.
   
 ![Eye Tracking by group and length](images/analyser1.png)
