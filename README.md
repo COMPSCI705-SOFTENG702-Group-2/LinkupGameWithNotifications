@@ -16,9 +16,9 @@ Supported System: Windows, Mac, Android
 
 Supported Browser: Chrome 
 
-<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png" alt="Eye Tracking" style="width: 300px">
-<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo2.png" alt="Short notification" style="width: 300px">
-<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo3.png" alt="Long notification" style="width: 300px">
+<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png" alt="Eye Tracking" width=300>
+<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo2.png" alt="Short notification" width=300>
+<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo3.png" alt="Long notification" width=300>
 
 ## Summary
 
