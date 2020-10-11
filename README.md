@@ -195,5 +195,4 @@ Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
 details
 
 ## Acknowledgment
-This project was conducted supported by Dr Danielle Lottridge of the Department of Computer Science at
-the University of Auckland.
+This project was conducted supported by Dr Danielle Lottridge and Prof Robert Amor of the Department of Computer Science and Department of Software Engineering at the University of Auckland.
