@@ -16,7 +16,8 @@ Supported System: Windows, Mac, Android
 
 Supported Browser: Chrome 
 
-<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png" alt="Eye Tracking" width=300>
+<img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png" alt="Eye Tracking" width=100>
+Eye tracking screenshot
 <img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo2.png" alt="Short notification" width=300>
 <img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo3.png" alt="Long notification" width=300>
 
@@ -183,5 +184,5 @@ Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
 details
 
 ## Acknowledgment
-This project was conducted supported by Dr Danielle Lottridge and Prof Robert Amor of the Department of Computer Science and Department of Software Engineering at
+This project was conducted supported by Dr Danielle Lottridge of the Department of Computer Science at
 the University of Auckland.
