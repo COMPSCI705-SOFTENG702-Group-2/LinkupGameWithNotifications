@@ -2,9 +2,10 @@
 
 ## Introduction
 
-The aim of this project is to study the relationship between information awareness and multitasking. Participants will be asked to play the link-up game while having some long or short pop-up notifications during the game. The link-up game is treated as a task that requires continuous attention. Meanwhile, the notifications will pop up with temporal density consistent. 
+The aim of this project is to study the relationship between information awareness and multitasking. 
+We assume that the chunking and frequency of the information will impact information awareness when people are doing a continous attention task. In this study, participants will be asked to play the link-up game (continous attention task) while having some long or short pop-up notifications (different chunking and frequency of information) during the game. The notifications will pop up with temporal density consistent. After the game, participants will take questionnaires to test information awareness.
 <br><br>
-The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
+The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. Meanwhile, the long texting notifications will occur every 30 second, and short texting notifications would occur four times per 30 sechond. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
 
 ### Research Question
 How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
