@@ -78,6 +78,9 @@ Double click on the index.html (For the presistency of the program behaviour we 
 Click Download ZIP button in the homepage of the repository (The screenshot are provided below)
 
 # STEP 2
+Extract the ZIP file
+
+# STEP 3
 Double click on the index.html (For the presistency of the program behaviour we recommend you to use Google chrome)
 ```
 
