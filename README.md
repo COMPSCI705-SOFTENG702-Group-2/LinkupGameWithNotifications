@@ -16,6 +16,10 @@ Supported System: Windows, Mac, Android
 
 Supported Browser: Chrome 
 
+![Eye Tracking](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png)
+![Short notification](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo2.png)
+![Long notification](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo3.png)
+
 ## Summary
 
   - [Getting Started](#getting-started)
