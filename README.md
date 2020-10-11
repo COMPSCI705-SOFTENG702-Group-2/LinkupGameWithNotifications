@@ -19,7 +19,7 @@ Supported Browser: Chrome
 
 <img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo1.png" alt="Eye Tracking" height=380><img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo2.png" alt="Short notification" height=380><img src="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/images/demo3.png" alt="Long notification" height=380>
 
-Eye tracking demostration &nbsp;&nbsp;&nbsp; Link game with short notification pop-up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link game with long notification pop-up
+Eye tracking demostration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Link game with short notification pop-up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link game with long notification pop-up
 
 ## Summary
 
