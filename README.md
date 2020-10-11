@@ -119,7 +119,7 @@ Experiment Environment setup:
   - [Linkup](https://github.com/gd4Ark/linkup) - The primary code base that we used to build the Linkup game. The game is treated as the main task that requires continuous attention. 
   - [Eye Tracking](https://github.com/brownhci/WebGazer) - The open-source library that we used for gathering eye-tracking data. In this experiment, we are interested in the duration and frequency that the participants look at the notifications.
 
-## Experiment
+## Study Design
 
 ### Introduction
 
@@ -135,7 +135,7 @@ Experiment Environment setup:
 
 Refer to the [Participant Information Sheet](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/COMPSCI705_PIS_Students_Oct_2020.pdf) and [Consent Form](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/Consent_Form.pdf).
 
-### Study Design
+### Experiment
 #### Approach: Within-subject
 We followed a within-subject experiment design for this study. Participants will be seperated into 2 groups and all the group members will receive long and short texting notifications. To reduce the confounding variables of notification order, each group will receive different notification order while playing the link game.
 #### Participants: 10 university students
@@ -147,14 +147,15 @@ The link game and notifications will take 11 minutes. Participants will be asked
   1. Explain the study and game rules to participants
   2. Participants read the Participant Information Sheet and sign the Consent Form
   3. Randomly separate participants into two groups (Group A, Group B)
-  4. Group A will execute the Game 1, Group B will execute the Game 2 (the order of notification is different in Game 1 and Game 2)
+  4. Access the https://multifun.iceloof.com with Chrome browser in Laptop or Android devices 
   5. Help participants adjust the eye tracking with the webcam in the laptop
-  6. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
-  7. Participants start the game 1 or 2
-  8. When the participants start the game, the notifications will pop up after 30 seconds
-  9. Participants will jump into a survey after the experiment
-  10. Participants fill up the questionnaires
-  11. Complete the study 
+  6. Group A will execute the Game 1, Group B will execute the Game 2 (the order of notification is different in Game 1 and Game 2)
+  7. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
+  8. Participants start the game 1 or 2
+  9. When the participants start the game, the notifications will pop up after 30 seconds
+  10. Participants will jump into a survey after the experiment
+  11. Participants fill up the questionnaires
+  12. Complete the study 
 
 ## Data Analysis / Measures
 We collected gaming data, eye tracking data, manual dismiss notification and survey data through Google Form, and the data is exported as csv under "Analyser" folder. Based on the data analyser tool "Analyser/analyser.ipynb", there are some data which are not useful for our analysis, like the gaming data, which is very hard to link to the survey data, and the manual dismiss notification data shows nobody close the notification manually, so there are not used in this analysis. 
