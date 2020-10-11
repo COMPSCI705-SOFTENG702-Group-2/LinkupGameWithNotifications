@@ -5,7 +5,7 @@
 The aim of this project is to study the relationship between information awareness and multitasking. 
 We assume that the chunking and frequency of the information will impact information awareness when people are doing a continous attention task. In this study, participants will be asked to play the link-up game (continous attention task) while having some long or short pop-up notifications (different chunking and frequency of information) during the game. The notifications will pop up with temporal density consistent. After the game, participants will take questionnaires to test information awareness.
 <br><br>
-The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. Meanwhile, the long texting notifications will occur every 30 second, and short texting notifications would occur four times per 30 sechond. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
+The game starts by recognizing the face of the participants in order to track their eye gaze data. And the game starts by clicking the “Start Game” button. There are two “Start Game” buttons, each has a different but complementary permutation of the notifications to reduce the bias. The game rule is to identify and click the two tiles with the same image and can be reached within two orthogonal turnings. After doing so, the corresponding tiles will be removed. When all tiles are eliminated, the level is completed. Meanwhile, the long texting notifications will occur every 30 second, and short texting notifications would occur four times per 30 second. The game duration is 11 minutes, in the end, the participants will be redirected to the questionnaire page.
 
 ### Research Question
 How does chunking and frequency of information impact information awareness, under the presence of a continuous attention task. 
@@ -135,27 +135,28 @@ Experiment Environment setup:
 
 Refer to the [Participant Information Sheet](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/COMPSCI705_PIS_Students_Oct_2020.pdf) and [Consent Form](https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/docs/Consent_Form.pdf).
 
-### Approach
-Within-subject
-### Participants
-10 university students
-### Duration
-Around 15 minutes (including game and questionnaires)
+### Study Design
+#### Approach: Within-subject
+We followed a within-subject experiment design for this study. Participants will be seperated into 2 groups and all the group members will receive long and short texting notifications. To reduce the confounding variables of notification order, each group will receive different notification order while playing the link game.
+#### Participants: 10 university students
+We will recruited at least 10 university students to attend this experiment. 
+#### Duration: Around 15 minutes (including game and questionnaires)
+The link game and notifications will take 11 minutes. Participants will be asked to fill with questionnaries after the experiment, which may take around 4 minutes. Total time cost will around 15 minutes.
 
-### Steps:
-  1. Explain the experiment and game rules  
+#### Procedure:
+  1. Explain the study and game rules to participants
   2. Participants read the Participant Information Sheet and sign the Consent Form
   3. Randomly separate participants into two groups (Group A, Group B)
-  4. Group A will execute the Game 1, Group B will execute the Game 2 (the difference between Game 1 and Game 2 is the order of notification )
-  5. Adjust the eye tracking with the webcam in the laptop
-  6. Participants will start the game 1 or 2
-  7. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
-  8. When they start the game, the notifications will pop up after 30 seconds
+  4. Group A will execute the Game 1, Group B will execute the Game 2 (the order of notification is different in Game 1 and Game 2)
+  5. Help participants adjust the eye tracking with the webcam in the laptop
+  6. Ask participants to keep playing the game as fast and accurately as possible, and take a look at all the notifications
+  7. Participants start the game 1 or 2
+  8. When the participants start the game, the notifications will pop up after 30 seconds
   9. Participants will jump into a survey after the experiment
-  10. Participants will need to fill up the questionnaires
-  11. Complete the experiment 
+  10. Participants fill up the questionnaires
+  11. Complete the study 
 
-## Data Analysis
+## Data Analysis / Measures
 We collected gaming data, eye tracking data, manual dismiss notification and survey data through Google Form, and the data is exported as csv under "Analyser" folder. Based on the data analyser tool "Analyser/analyser.ipynb", there are some data which are not useful for our analysis, like the gaming data, which is very hard to link to the survey data, and the manual dismiss notification data shows nobody close the notification manually, so there are not used in this analysis. 
 
 You can check the program <a href="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/Analyser/analyser.ipynb" target="_blank">here</a>(ipynb) or <a href="https://github.com/COMPSCI705-SOFTENG702-Group-2/LinkupGameWithNotifications/blob/master/Analyser/analyser.pdf" target="_blank">here</a>(pdf).
